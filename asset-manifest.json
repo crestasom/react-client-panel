@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-client-panel/static/css/main.36497136.chunk.css",
+    "main.js": "/react-client-panel/static/js/main.36bea263.chunk.js",
+    "main.js.map": "/react-client-panel/static/js/main.36bea263.chunk.js.map",
+    "runtime-main.js": "/react-client-panel/static/js/runtime-main.19f2e524.js",
+    "runtime-main.js.map": "/react-client-panel/static/js/runtime-main.19f2e524.js.map",
+    "static/js/2.67f571a1.chunk.js": "/react-client-panel/static/js/2.67f571a1.chunk.js",
+    "static/js/2.67f571a1.chunk.js.map": "/react-client-panel/static/js/2.67f571a1.chunk.js.map",
+    "index.html": "/react-client-panel/index.html",
+    "precache-manifest.97ce229c7c3ccd4af1d32ac70297ec39.js": "/react-client-panel/precache-manifest.97ce229c7c3ccd4af1d32ac70297ec39.js",
+    "service-worker.js": "/react-client-panel/service-worker.js",
+    "static/css/main.36497136.chunk.css.map": "/react-client-panel/static/css/main.36497136.chunk.css.map",
+    "static/js/2.67f571a1.chunk.js.LICENSE.txt": "/react-client-panel/static/js/2.67f571a1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.19f2e524.js",
+    "static/js/2.67f571a1.chunk.js",
+    "static/css/main.36497136.chunk.css",
+    "static/js/main.36bea263.chunk.js"
+  ]
+}

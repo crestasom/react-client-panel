@@ -4,25 +4,26 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux';
 import { clearNotify } from '../../actions/notifyActions'
 import React, { Component } from 'react'
+import FlashMessage from 'react-flash-message'
 
 class Alert extends Component {
-    componentDidMount() {
-        console.log("componentDidMount")
-        const { clearNotify } = this.props
-        clearNotify()
-    }
+
     render() {
-        console.log("render")
         const { message, messageType } = this.props
-        console.log(message, "message")
         return (
-            <div className={classnames('alert', {
-                'alert-success': messageType === 'success',
-                'alert-danger': messageType === 'error',
-            })}>
-                {message}
-            </div>
+            <FlashMessage duration={5000}>
+                <div className={classnames('alert', {
+                    'alert-success': messageType === 'success',
+                    'alert-danger': messageType === 'error',
+                })}>
+                    {message}
+                </div>
+            </FlashMessage>
         );
+    }
+    componentWillUnmount() {
+        console.log("componentWillUnmount")
+        this.props.clearNotify()
     }
 }
 

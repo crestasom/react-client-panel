@@ -21,14 +21,11 @@ class AddClient extends Component {
         }
     }
     onChange = (event) => {
-        console.log(this.state)
         this.setState({
             [event.target.name]: event.target.value
         })
-        console.log(this.state)
     }
     static getDerivedStateFromProps(props, state) {
-        console.log("getDerivedStateFromProps")
         if (state.id === '-1') {
             return null
         }
@@ -67,16 +64,10 @@ class AddClient extends Component {
         }
     }
 
-    componentDidMount() {
-        console.log("componentDidMount")
-        console.log(this.props)
-    }
-
 
     render() {
         const { id } = this.state
         const { disableBalanceOnAdd, disableBalanceOnEdit } = this.props.settings
-        console.log(id, typeof (id))
         const disableBalance = id === '-1' ? disableBalanceOnAdd : disableBalanceOnEdit
         return (
             <div>

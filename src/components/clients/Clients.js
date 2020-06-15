@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { Link } from 'react-router-dom'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
@@ -9,7 +9,7 @@ import classnames from 'classnames'
 import Alert from '../layout/Alert'
 import { clearNotify } from '../../actions/notifyActions'
 
-class Clients extends Component {
+class Clients extends PureComponent {
     constructor(props) {
         super(props)
 
